@@ -1,0 +1,18 @@
+<html>
+ <head>
+ </head>
+ <body>
+   <h1> Create a new book here </h1>
+   <%= form_for :book, url:books_path do |b| %><p>
+   <%= b.label :title%>
+   <%= b.text_field :title%></p><p>
+   <%= b.label :author%>
+   <%= b.text_field :author%></p>
+   <%= b.label :price%>
+   <%= b.text_field :price%></p><p>
+   <p>
+    <%= b.submit %>
+   </p>
+   <% end %>
+ </body>
+</html>

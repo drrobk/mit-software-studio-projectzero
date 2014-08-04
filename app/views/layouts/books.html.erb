@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <!-- include scripts and stylesheets here -->
+</head>
+<body>
+	<div id="header">
+    <h1>Library Info System</h1>
+    </div>
+    <div id="main-body">
+		<%= yield %>
+    </div>
+    <div id="footer">
+
+    <hr>
+    <% now = Time.now %>
+    <%= "Page generated at: #{now}" %>
+    </div>
+</body>
+</html>

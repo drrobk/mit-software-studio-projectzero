@@ -1,4 +1,7 @@
 MitSoftwareStudioProjectzero::Application.routes.draw do
+  resources :books
+
+
   get "hello/sayhi"
 
   # The priority is based upon order of creation:
