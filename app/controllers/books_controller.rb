@@ -1,6 +1,8 @@
 class BooksController < ApplicationController
 
-	#layout "books"
+	http_basic_authenticate_with :name => "rob", :password => "p@ssw0rd1", :except => [:index]
+
+	layout "application"
 
 	def index
 		@books = Book.all
